@@ -1,3 +1,3 @@
 export default function ByName() {
-  return <></>
+  return <>By name</>
 }

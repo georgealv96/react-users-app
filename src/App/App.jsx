@@ -3,7 +3,7 @@ import ByAge from '../ByAge/ByAge'
 import ByCountry from '../ByCountry/ByCountry'
 import ByName from '../ByName/ByName'
 import { useState } from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link, Navigate } from 'react-router-dom'
 import './App.css'
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
           <Route path="/name" element={<ByName />} />
           <Route path="/country" element={<ByCountry />} />
           <Route path="/age" element={<ByAge />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
     </div>
